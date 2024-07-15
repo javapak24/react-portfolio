@@ -1,24 +1,33 @@
 import React from 'react'
 import {
-    CardMeta,
-    CardHeader,
-    CardDescription,
-    CardContent,
-    Card,
-    Image,
-  } from 'semantic-ui-react'
+  CardMeta,
+  CardHeader,
+  CardDescription,
+  CardContent,
+  Card,
+  Icon,
+  Image,
+} from 'semantic-ui-react'
 
-export default function MyProjectCard() {
-    <Card>
-    <Image src='#'/>
+const MyProjectCard = () => (
+  <Card>
+    <Image src='/images/avatar/large/matthew.png' wrapped ui={false} />
     <CardContent>
-      <CardHeader>Project Name</CardHeader>
+      <CardHeader>Matthew</CardHeader>
       <CardMeta>
-        <span className='date'>Tech Used</span>
+        <span className='date'>Joined in 2015</span>
       </CardMeta>
       <CardDescription>
-        Brief Project Description
+        Matthew is a musician living in Nashville.
       </CardDescription>
     </CardContent>
+    <CardContent extra>
+      <a>
+        <Icon name='user' />
+        22 Friends
+      </a>
+    </CardContent>
   </Card>
-}
+)
+
+export default MyProjectCard

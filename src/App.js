@@ -1,15 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-import MyHeader from './components/MyHeader';
-import MyMain from './components/MyMain';
-import MyFooter from './components/MyFooter';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import PortfolioView from './PortfolioView';
+import Home from './Home';
+import ContactView from './ContactView';
 
 function App() {
   return (
     <div className="App">
-     <MyHeader />
-     <MyMain />
-     <MyFooter />
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/contact' element={<ContactView />} />
+      <Route path='/portfolio' element={<PortfolioView />} />
+    </Routes>
+    
+    </BrowserRouter>
     </div>
   );
 }

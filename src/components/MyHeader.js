@@ -16,7 +16,7 @@ export default function MyHeader() {
         </Menu.Item>
         <Menu.Item as='a' href="/">Home</Menu.Item>
         <Menu.Item as='a' href="/portfolio">Portfolio</Menu.Item>
-        <Menu.Item as='a' href="/portfolio">Contact</Menu.Item>
+        <Menu.Item as='a' href="/contact">Contact</Menu.Item>
       </Container>
     </Menu>
     </div>
