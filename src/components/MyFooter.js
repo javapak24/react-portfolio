@@ -3,9 +3,15 @@ import { Icon } from 'semantic-ui-react'
 
 const MyFooter = () => (
   <div>
-    <Icon bordered color='teal' name='facebook' />
-    <Icon bordered color='teal' name='linkedin' />
-    <Icon bordered color='teal' name='twitter' />
+    <a href='https://facebook.com/' target='_blank'>
+    <Icon bordered color='teal' link name='facebook'/>
+    </a>
+    <a href='https://linkedin.com/' target='_blank'>
+    <Icon bordered color='teal' link name='linkedin'/>
+    </a>
+    <a href='https://x.com/?lang=en' target='_blank'>
+    <Icon bordered color='teal' link name='twitter'/>
+    </a>
   </div>
 )
 

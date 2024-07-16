@@ -7,24 +7,27 @@ import {
   Card,
   Icon,
   Image,
+  CardGroup,
 } from 'semantic-ui-react'
 
-const MyProjectCard = () => (
-  <Card>
-    <Image src='/images/avatar/large/matthew.png' wrapped ui={false} />
+const MyProjectCard = ({card}) => (
+  <Card centered>
+    <Image src= {card.image} wrapped ui={false} />
     <CardContent>
-      <CardHeader>Matthew</CardHeader>
+      <CardHeader>{card.name}</CardHeader>
       <CardMeta>
         <span className='date'>Joined in 2015</span>
       </CardMeta>
       <CardDescription>
-        Matthew is a musician living in Nashville.
+      {card.description}
       </CardDescription>
     </CardContent>
     <CardContent extra>
-      <a>
-        <Icon name='user' />
-        22 Friends
+      <a href={card.gitUrl}>
+        <Icon name='github' />
+      </a>
+      <a href={card.liveViewUrl}>
+        <Icon name='th' />
       </a>
     </CardContent>
   </Card>

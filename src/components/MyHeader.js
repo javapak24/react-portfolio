@@ -10,9 +10,9 @@ export default function MyHeader() {
     <div>
       <Menu fixed='top' inverted>
       <Container>
-        <Menu.Item as='a' header>
-          <Image size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />
-         Java
+        <Menu.Item as='a' href ='/' header>
+        <Image size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />
+        Java
         </Menu.Item>
         <Menu.Item as='a' href="/">Home</Menu.Item>
         <Menu.Item as='a' href="/portfolio">Portfolio</Menu.Item>
